@@ -25,7 +25,9 @@ class AdvertisingInput(BaseModel):
     TV: float
     radio: float
     newspaper: float
-
+@app.get("/")
+def root():
+    return RedirectResponse(url="/docs")
 # ==========================================
 # Home Route
 # ==========================================
